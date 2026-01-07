@@ -59,8 +59,44 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-@import 'variables';
-@import 'header';
+// Assets 
+@import 'assets/_fonts.scss';
+
+// Common
+@import 'common/_global.scss';
+@import 'common/_mixins.scss';
+@import 'common/_reset.scss';
+
+// Components
+@import 'components/_buttons.scss';
+@import 'components/_icons.scss';
+@import 'components/_typography.scss';
+
+// ie
+@import 'ie/_ie.scss';
+
+// Layouts
+@import 'layouts/blocks/_ctas.scss';
+@import 'layouts/blocks/_faqs.scss';
+@import 'layouts/blocks/_featured-testimonials.scss';
+
+@import 'layouts/forms/_contact.scss';
+@import 'layouts/forms/_contact-block.scss';
+
+@import 'layouts/pages/_404.scss';
+@import 'layouts/pages/_about-us.scss';
+@import 'layouts/pages/_contact.scss';
+
+@import 'layouts/woocommerce/_archive.scss';
+@import 'layouts/woocommerce/_archive-cat.scss';
+@import 'layouts/woocommerce/_content-product.scss';
+
+// Root files
+@import '_footer.scss';
+@import '_header.scss';
+
+// Plugins
+@import 'plugins/ie.scss';
 
 /* Document
 	 ========================================================================== */

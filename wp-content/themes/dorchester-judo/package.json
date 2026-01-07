@@ -19,6 +19,11 @@
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
     "dir-archiver": "^1.1.1",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^10.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^7.0.1",
     "rtlcss": "^3.5.0",
     "sass": "^1.97.2"
@@ -36,10 +41,10 @@
     "plugins": [],
     "map": false
   },
-"scripts": {
-  "build": "sass sass/style.scss style.css --style compressed",
-  "watch": "sass sass/style.scss style.css --watch"
-},
+  "scripts": {
+    "build": "sass sass/style.scss style.css --style compressed",
+    "watch": "sass sass/style.scss style.css --watch"
+  },
   "main": "index.js",
   "dependencies": {
     "abab": "^2.0.6",

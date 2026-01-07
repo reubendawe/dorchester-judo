@@ -54,6 +54,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Normalize
 --------------------------------------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+header h1 {
+  background-color: cyan;
+}
+
 h1, h2 {
   color: hotpink !important;
 }
