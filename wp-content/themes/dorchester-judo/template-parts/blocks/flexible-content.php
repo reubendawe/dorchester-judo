@@ -1,3 +1,0 @@
-// Start Flexible content
-
-// Featured
