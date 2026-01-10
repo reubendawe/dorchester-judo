@@ -7,7 +7,7 @@
                 </svg>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Home</a>
+                        <a href="<?php echo get_permalink(10); ?>" class="nav-link text-light">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-light">About</a>
@@ -19,7 +19,7 @@
                         <a href="#" class="nav-link text-light">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Contact</a>
+                        <a href="<?php echo get_permalink(13); ?>" class="nav-link text-light">Contact</a>
                     </li>
                 </ul>
             </div>
