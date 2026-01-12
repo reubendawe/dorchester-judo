@@ -1,5 +1,14 @@
 <!-- Hero image -->
 
-<div class="d-flex justify-content-center">
-<h1>This is the <?php the_title(); ?> flexible content hero image placeholder</h1>
-</div>
+<section class="hero-section">
+   <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold"><?php the_title(); ?> Section</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."></p>
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Primary button</button>
+    </div>
+   </div>
+</section>
