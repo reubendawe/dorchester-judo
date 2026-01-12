@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-<h1>Home</h1>
+<?php get_template_part('template-parts/blocks/flexible-content'); ?>
 
 <?php get_footer();
