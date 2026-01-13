@@ -22,27 +22,34 @@
 
 <div class="bg-dark sticky-top">
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3">
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <span class="fs-4 text-white">Simple header</span>
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+
+            <a href="#" class="text-white fs-4">
+                Simple header
             </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">Classes</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">Contact</a>
-                </li>
-            </ul>
-        </header>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
     </div>
 </div>
