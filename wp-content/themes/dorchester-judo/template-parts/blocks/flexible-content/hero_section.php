@@ -1,5 +1,4 @@
 <?php
-// Hero section template
 $image = get_sub_field('image');
 $subtitle = get_sub_field('subtitle');
 $title = get_sub_field('title');

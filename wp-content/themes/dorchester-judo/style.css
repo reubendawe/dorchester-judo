@@ -81,6 +81,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding: 60px 0;
 }
 
+.cards-section {
+  padding: 80px 0;
+}
+.cards-section .card-padding {
+  padding: 60px 0;
+}
+
 @media only screen and (max-width: 600px) {
   .title-pad {
     padding: 0 0 30px;
