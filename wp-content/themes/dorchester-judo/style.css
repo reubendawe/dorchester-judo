@@ -54,6 +54,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Normalize
 --------------------------------------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+section {
+  padding: 80px 0;
+}
+
 .hero-section {
   position: relative;
   height: 100vh;
@@ -71,9 +75,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   z-index: -2;
 }
 
-.bullets-section {
-  padding: 80px 0;
-}
 .bullets-section .icon {
   width: 48px;
 }
@@ -81,11 +82,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   padding: 60px 0;
 }
 
-.cards-section {
-  padding: 80px 0;
-}
 .cards-section .card-padding {
   padding: 60px 0;
+}
+
+.icon-list-section .list-icon {
+  width: 80px;
+}
+.icon-list-section .icon-padding {
+  padding: 60px 0 0;
 }
 
 @media only screen and (max-width: 600px) {
