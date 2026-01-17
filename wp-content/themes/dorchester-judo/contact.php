@@ -1,7 +1,5 @@
 <?php get_header(); 
-/**
- * Template Name: About
- */
+/* Template Name: Contact Us */
 ?>
 
 <?php get_footer(); ?>
