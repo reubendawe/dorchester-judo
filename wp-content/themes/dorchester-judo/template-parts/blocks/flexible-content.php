@@ -5,6 +5,7 @@
         <?php if (get_row_layout() == 'hero_section') : ?>
             <?php
             $image = get_sub_field('image');
+            $subtitle = get_sub_field('subtitle');
             $title = get_sub_field('title');
             ?>
         <?php endif; ?>
@@ -17,6 +18,10 @@
             <div class="px-4 py-5 my-5 text-center">
                 <?php if ($image) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="hero-image">
+                <?php endif; ?>
+
+                <?php if ($subtitle) : ?>
+                <p><?php echo wp_kses_post($subtitle); ?></p>
                 <?php endif; ?>
 
                 <?php if ($title) : ?>
