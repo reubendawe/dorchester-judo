@@ -16,7 +16,7 @@ section {
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* key part */
+    object-fit: cover;
     z-index: -2;
   }
 }
@@ -48,6 +48,21 @@ section {
     }
     .icon-padding {
         padding: 60px 0 0;
+    }
+}
+
+// Image left, text right
+
+.img-left-text-right {
+    .img-left {
+        width: 100%;
+        height: 530px;
+        object-fit: cover;
+    }
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 

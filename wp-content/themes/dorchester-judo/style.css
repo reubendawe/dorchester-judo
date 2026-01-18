@@ -71,7 +71,7 @@ section {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* key part */
+  object-fit: cover;
   z-index: -2;
 }
 
@@ -91,6 +91,17 @@ section {
 }
 .icon-list-section .icon-padding {
   padding: 60px 0 0;
+}
+
+.img-left-text-right .img-left {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+}
+.img-left-text-right .content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
