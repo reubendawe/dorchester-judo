@@ -115,7 +115,12 @@ section {
   object-fit: cover;
 }
 .icons-left-img-right .list-icon {
-  width: 80px;
+  width: 48px;
+}
+.icons-left-img-right p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 @media only screen and (max-width: 600px) {

@@ -16,13 +16,20 @@ $image_right = get_sub_field('image_right');
                 <div class="container">
                     <div class="row">
                         <?php if (have_rows('icons_repeater_left')): ?>
-                            <?php while (have_rows('icons_repeater_left')) : the_row(); ?>
+                            <?php while (have_rows('icons_repeater_left')) : the_row();
+                            $icon = get_sub_field('icon');
+                            $text = get_sub_field('text');
+                            ?>
                                 <div class="col-6 py-3">
-                                    <img
-                                        src="<?php echo esc_url($icon['url']); ?>"
-                                        alt="<?php echo esc_attr($icon['alt']); ?>"
-                                        class="list-icon mb-2">
-                                    <p>Test</p>
+                                    <?php if ($icon) : ?>
+                                        <img
+                                            src="<?php echo esc_url($icon['url']); ?>"
+                                            alt="<?php echo esc_attr($icon['alt']); ?>"
+                                            class="list-icon mb-2">
+                                    <?php endif; ?>
+                                    <?php if ($text) : ?>
+                                        <p><?php echo esc_url($text); ?></p>
+                                    <?php endif; ?>
                                 </div>
                             <?php endwhile; ?>
                         <?php endif; ?>
@@ -56,8 +63,8 @@ $image_right = get_sub_field('image_right');
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
-            <div class="col-12 col-xl-6">
-                <?php if ('image_right') : ?>
+            <div class="col-12 col-xl-6 d-flex align-items-center">
+                <?php if ($image_right) : ?>
                     <img src="<?php echo esc_url($image_right['url']); ?>" alt="<?php echo esc_url($image_right['alt']); ?>" class="img-right">
                 <?php endif; ?>
             </div>

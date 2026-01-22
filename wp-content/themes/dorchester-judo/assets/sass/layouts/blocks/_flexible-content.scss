@@ -80,7 +80,12 @@ section {
         object-fit: cover;
     }
     .list-icon {
-        width: 80px;
+        width: 48px;
+    }
+    p {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
     }
 }
 
