@@ -66,6 +66,24 @@ section {
     }
 }
 
+// Icons left, image right
+
+.icons-left-img-right {
+    .content-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-right {
+        width: 100%;
+        height: 530px;
+        object-fit: cover;
+    }
+    .list-icon {
+        width: 80px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     
     .title-pad {
