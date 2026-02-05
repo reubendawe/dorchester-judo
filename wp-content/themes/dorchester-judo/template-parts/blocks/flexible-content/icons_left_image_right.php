@@ -12,7 +12,6 @@ $image_right = get_sub_field('image_right');
                 <p><?php echo wp_kses_post($subtitle_left); ?></p>
                 <h2><?php echo wp_kses_post($title_left); ?></h2>
 
-
                 <div class="container">
                     <div class="row">
                         <?php if (have_rows('icons_repeater_left')): ?>

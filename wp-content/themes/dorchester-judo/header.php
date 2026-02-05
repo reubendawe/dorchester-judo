@@ -35,7 +35,7 @@
                         <a href="<?php echo get_permalink(47); ?>" class="nav-link text-white" aria-current="page">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Classes</a>
+                        <a href="<?php echo get_permalink(113); ?>" class="nav-link text-white" aria-current="page">Classes</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-white" aria-current="page">Blog</a>

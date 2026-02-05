@@ -33,7 +33,7 @@ $cards_button = get_sub_field('cards_button');
                             <?php if ($card_image) : ?>
                                 <img
                                     src="<?php echo esc_url($card_image['url']); ?>"
-                                    alt="<?php echo esc_url($icon['alt']); ?>"
+                                    alt="<?php echo esc_url($card_image['alt']); ?>"
                                 >
                             <?php endif; ?>
 
