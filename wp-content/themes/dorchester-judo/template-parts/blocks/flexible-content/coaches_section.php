@@ -4,7 +4,7 @@ $coaches_title = get_sub_field('coaches_title');
 $coaches_button = get_sub_field('coaches_button');
 ?>
 
-<section class="cards-section bg-light">
+<section class="cards-section">
     <div class="container">
         <div class="row">
             <div>

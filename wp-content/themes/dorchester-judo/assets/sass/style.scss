@@ -57,10 +57,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Normalize
 --------------------------------------------- */
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 // Assets 
-@import 'assets/_fonts.scss';
+@import 'assets/_variables.scss';
+@import 'assets/fonts.scss';
 
 // Common
 @import 'common/_global.scss';
@@ -1009,6 +1008,3 @@ main {
 	margin-bottom: 1.5em;
 }
 
-h1 {
-    color: pink;
-}

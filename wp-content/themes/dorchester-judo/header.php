@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
 </head>
 
-<div class="bg-dark sticky-top">
+<div class="sticky-top header">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark py-3">
             <a href="#" class="text-white fs-4">

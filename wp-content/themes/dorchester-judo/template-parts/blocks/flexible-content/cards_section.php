@@ -4,7 +4,7 @@ $cards_title = get_sub_field('cards_title');
 $cards_button = get_sub_field('cards_button');
 ?>
 
-<section class="cards-section bg-light">
+<section class="cards-section">
     <div class="container">
         <div class="row">
             <div>
@@ -62,7 +62,7 @@ $cards_button = get_sub_field('cards_button');
             </div>
         <?php endif; ?>
 
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center px-4 icon-cta">
+        <div class="d-grid gap-2 d-sm-flex icon-cta">
             <?php if ($cards_button) : ?>
                 <a
                     href="<?= esc_url($card_button['url']); ?>"

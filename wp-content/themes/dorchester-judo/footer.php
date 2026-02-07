@@ -1,4 +1,4 @@
-<div class="bg-dark text-light pt-4">
+<div class="footer text-light pt-4">
     <div class="container">
         <footer class="py-3 px-2">
             <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">

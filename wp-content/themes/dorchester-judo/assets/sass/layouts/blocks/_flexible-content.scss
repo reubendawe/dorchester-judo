@@ -35,6 +35,8 @@ section {
 // Cards section
 
 .cards-section {
+    background-color: $brand-primary;
+    color: $brand-neutral-100;
     .card-padding {
         padding: 60px 0;
     }
