@@ -7,7 +7,7 @@ $bullet_title = get_sub_field('bullet_title');
     <div class="container">
 
         <div class="row">
-            <div class="text-center px-4">
+            <div>
                 <?php if ($bullet_subtitle) : ?>
                     <p><?php echo wp_kses_post($bullet_subtitle); ?></p>
                 <?php endif; ?>
@@ -19,7 +19,7 @@ $bullet_title = get_sub_field('bullet_title');
         </div>
 
         <?php if (have_rows('icons_repeater')): ?>
-            <div class="row px-4">
+            <div class="row">
                 <?php while (have_rows('icons_repeater')) : the_row(); ?>
                     <?php
                     $icon = get_sub_field('icon');
@@ -39,9 +39,6 @@ $bullet_title = get_sub_field('bullet_title');
                     </div>
 
                 <?php endwhile; ?>
-            </div>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center px-4 icon-cta">
-                <button type="button" class="btn btn-primary btn-lg">Primary Action</button>
             </div>
         <?php endif; ?>
     </div>

@@ -7,7 +7,7 @@ $cards_button = get_sub_field('cards_button');
 <section class="cards-section bg-light">
     <div class="container">
         <div class="row">
-            <div class="text-center px-4">
+            <div>
                 <?php if ($cards_subtitle) : ?>
                     <p><?php echo wp_kses_post($cards_subtitle); ?></p>
                 <?php endif; ?>

@@ -9,7 +9,7 @@ $button_secondary = get_sub_field('button_secondary');
 <section class="hero-section">
     <div class="container">
         <div class="row">
-            <div class="px-4 py-5 my-5 text-center">
+            <div class="py-5 my-5">
 
                 <?php if ($image) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="hero-image">
@@ -23,7 +23,7 @@ $button_secondary = get_sub_field('button_secondary');
                     <h1 class="display-5 fw-bold"><?php echo wp_kses_post($title); ?></h1>
                 <?php endif; ?>
 
-                <div class="d-grid gap-2 d-sm-flex pt-4 justify-content-sm-center">
+                <div class="d-grid gap-2 d-sm-flex pt-4">
                     <?php if ($button_primary) : ?>
                         <a
                             href="<?= esc_url($button_primary['url']); ?>"

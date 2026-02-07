@@ -6,7 +6,7 @@ $icon_title = get_sub_field('icon_title');
 <section class="icon-list-section">
     <div class="container">
         <div class="row">
-            <div class="text-center px-4">
+            <div>
                 <?php if ($icon_subtitle) : ?>
                     <p><?php echo wp_kses_post($icon_subtitle); ?></p>
                 <?php endif; ?>
@@ -18,7 +18,7 @@ $icon_title = get_sub_field('icon_title');
         </div>
 
         <?php if (have_rows('icon_repeater')): ?>
-            <div class="row px-4 g-5 icon-padding">
+            <div class="row g-5 icon-padding">
                 <?php while (have_rows('icon_repeater')) : the_row(); ?>
                     <?php
                     $icon_image = get_sub_field("icon_image");

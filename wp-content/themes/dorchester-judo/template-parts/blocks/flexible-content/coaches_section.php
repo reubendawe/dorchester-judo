@@ -7,7 +7,7 @@ $coaches_button = get_sub_field('coaches_button');
 <section class="cards-section bg-light">
     <div class="container">
         <div class="row">
-            <div class="text-center px-4">
+            <div>
                 <?php if ($coaches_subtitle) : ?>
                     <p><?php echo wp_kses_post($coaches_subtitle); ?></p>
                 <?php endif; ?>
@@ -45,15 +45,6 @@ $coaches_button = get_sub_field('coaches_button');
                                 <?php if ($bio) : ?>
                                     <p class="card-text"><?php echo wp_kses_post($bio); ?></p>
                                 <?php endif; ?>
-
-                                <?php if ($cta) : ?>
-                                    <a
-                                        href="<?= esc_url($cta['url']); ?>"
-                                        target="<?= esc_attr($cta['target'] ?: '_self'); ?>"
-                                        class="btn btn-primary">
-                                        <?= esc_html($cta['title']); ?>
-                                    </a>
-                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
@@ -62,7 +53,7 @@ $coaches_button = get_sub_field('coaches_button');
             </div>
         <?php endif; ?>
 
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center px-4 icon-cta">
+        <div class="d-grid gap-2 d-sm-flex icon-cta">
             <?php if ($coaches_button) : ?>
                 <a
                     href="<?= esc_url($coaches_button['url']); ?>"
