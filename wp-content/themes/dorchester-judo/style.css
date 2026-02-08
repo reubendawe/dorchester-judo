@@ -161,7 +161,81 @@ section {
 .header {
   background-color: #190e1a;
 }
+.header .nav-item:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background: #AD4320;
+  left: 45%;
+  height: 3px;
+  bottom: 0;
+  transition: all 0.3s;
+}
+.header .nav-item:hover:before {
+  width: 100%;
+  left: 0;
+}
+.header .contact-btn {
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s;
+}
 
+@media only screen and (min-width: 991px) {
+  .header .contact-btn {
+    position: relative;
+    z-index: 1;
+    border: 3px solid #AD4320;
+    padding: 10px 30px;
+    background: transparent !important;
+  }
+  .header .contact-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #AD4320;
+    z-index: -1;
+    transform: translateX(-101%);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .header .contact-btn:hover .nav-link {
+    color: #190e1a !important;
+  }
+  .header .contact-btn:hover:after {
+    transform: translateX(0);
+  }
+  .header .contact-btn .nav-link {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header .contact-btn {
+    border: none;
+    padding: 0;
+  }
+  .header .contact-btn:hover {
+    background-color: transparent;
+  }
+  .header .btn-underline:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background: #AD4320;
+    left: 45%;
+    height: 3px;
+    bottom: 0;
+    transition: all 0.3s;
+  }
+  .header .btn-underline:hover:before {
+    width: 100%;
+    left: 0;
+  }
+}
 /* Document
 	 ========================================================================== */
 /**
