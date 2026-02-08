@@ -36,7 +36,7 @@ $button_secondary = get_sub_field('button_secondary');
                         <a
                             href="<?= esc_url($button_secondary['url']); ?>"
                             target="<?= esc_attr($button_secondary['target'] ?: '_self'); ?>"
-                            class="btn btn-outline-secondary btn-lg px-4">
+                            class="btn btn-outline-secondary btn-lg px-4 btn-style">
                             <?= esc_html($button_secondary['title']); ?>
                         </a>
                     <?php endif; ?>

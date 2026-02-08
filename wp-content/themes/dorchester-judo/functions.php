@@ -193,3 +193,19 @@ function mytheme_register_menus() {
     ) );
 }
 add_action( 'after_setup_theme', 'mytheme_register_menus' );
+
+// Google Fonts
+
+function redpanda_brand_fonts() {
+    
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+
+    // Oswald (Bold 700) and Source Sans 3 (Regular 400 & Semi-Bold 600)
+    wp_enqueue_style( 
+        'redpanda-brand-fonts', 
+        'https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+3:wght@400;600&display=swap', 
+        false 
+    );
+}
+add_action( 'wp_enqueue_scripts', 'redpanda_brand_fonts' );

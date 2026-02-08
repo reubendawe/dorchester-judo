@@ -1,0 +1,18 @@
+// Brand fonts
+
+$font-heading: 'Oswald', sans-serif;
+$font-body: 'Source Sans 3', sans-serif;
+
+h1, .nav-link {
+    font-family: $font-heading;
+    font-weight: 700;
+      
+    -webkit-font-smoothing: antialiased;
+}
+
+body, p {
+    font-family: $font-body;
+    font-weight: 400;
+    line-height: 1.6;     
+    color: $brand-neutral-100;
+}
