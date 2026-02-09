@@ -1,3 +1,25 @@
 .footer {
     background-color: $brand-primary;
+    .navbar-brand {
+        img, .custom-logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    .footer {
+        .navbar-brand {
+            img, .custom-logo {
+            padding-bottom: 10px;
+            }
+        }
+    }
 }

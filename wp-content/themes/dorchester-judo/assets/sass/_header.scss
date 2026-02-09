@@ -1,6 +1,6 @@
 .header {
     background-color: $brand-primary;
-    .nav-item:before {
+    .nav-item:not(.contact-btn):before {
         content: "";
         position: absolute;
         width: 0;
@@ -10,9 +10,9 @@
         bottom: 0;
         transition: all .3s;
     }
-    .nav-item:hover:before {
+    .nav-item:not(.contact-btn):hover:before {
         width: 100%;
-        left:0;
+        left: 0;
     }
     .contact-btn {
         cursor: pointer;
@@ -79,23 +79,27 @@
         .contact-btn {
             border: none;
             padding: 0;
+            position: relative; 
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                background-color: $brand-tertiary-light;
+                left: 45%;
+                height: 3px;
+                bottom: 0;
+                transition: all .3s;
+            }
+
+            &:hover:before {
+                width: 100%;
+                left: 0;
+            }
+
             &:hover {
                 background-color: transparent;
             }
-        }
-        .btn-underline:before {
-            content: "";
-            position: absolute;
-            width: 0;
-            background: $brand-tertiary-light;
-            left: 45%;
-            height: 3px;
-            bottom: 0;
-            transition: all .3s;
-        }
-        .btn-underline:hover:before {
-            width: 100%;
-            left:0;
         }
     }
 }

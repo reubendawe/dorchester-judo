@@ -48,9 +48,9 @@
                         <a href="<?php echo get_permalink(113); ?>" class="nav-link text-white" aria-current="page">Classes</a>
                     </li>
                     <li class="nav-item mx-3 dropdown">
-                        <a href="#" class="nav-link text-white" aria-current="page">Blog</a>
+                        <a href="<?php echo get_permalink(139); ?>" class="nav-link text-white" aria-current="page">Blog</a>
                     </li>
-                    <li class="mx-3 contact-btn btn-underline">
+                    <li class="nav-item mx-3 contact-btn">
                         <a href="<?php echo get_permalink(13); ?>" class="nav-link text-white" aria-current="page">Contact</a>
                     </li>
                 </ul>
