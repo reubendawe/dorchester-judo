@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -12,6 +13,7 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,14 +24,22 @@
 <div class="sticky-top header">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark py-4">
-            <a href="#" class="text-white fs-4">
-                Simple header
-            </a>
+            <div class="navbar-brand">
+                <a href="<?php echo get_permalink(10); ?>">
+                    <?php
+                    if (function_exists('the_custom_logo') && has_custom_logo()) {
+                        the_custom_logo();
+                    } else {
+                        echo '<a class="navbar-brand text-white fs-4" href="' . esc_url(home_url('/')) . '">Simple header</a>';
+                    }
+                    ?>
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 align-items-center text-center pm-0">
                     <li class="nav-item mx-3 dropdown">
-                        <a href="#" class="nav-link text-white" aria-current="page">Home</a>
+                        <a href="<?php echo get_permalink(10); ?>" class="nav-link text-white" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item mx-3 dropdown">
                         <a href="<?php echo get_permalink(47); ?>" class="nav-link text-white" aria-current="page">About</a>

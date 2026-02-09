@@ -193,6 +193,15 @@ section {
   overflow: hidden;
   transition: color 0.3s;
 }
+.header .navbar-brand img, .header .navbar-brand .custom-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.header .navbar-brand img:hover, .header .navbar-brand .custom-logo:hover {
+  transform: scale(1.05);
+}
 
 @media only screen and (min-width: 991px) {
   .header .contact-btn {
