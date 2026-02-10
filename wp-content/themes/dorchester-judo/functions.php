@@ -221,3 +221,10 @@ function theme_prefix_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
+// CDN Bootstrap Icons 
+
+function theme_enqueue_bootstrap_icons() {
+    wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
+}
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_bootstrap_icons' );

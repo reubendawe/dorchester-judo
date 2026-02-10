@@ -48,18 +48,17 @@ $testimonials_repeater = get_sub_field('testimonials_repeater');
                     </div>
                 <?php endif; ?>
             </div>
+        </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon-custom" aria-hidden="true">
                     <i class="bi bi-chevron-left fs-3"></i>
                 </span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon-custom" aria-hidden="true">
-                    <i class="bi bi-chevron-right text-dark fs-3"></i>
+                    <i class="bi bi-chevron-right fs-3"></i>
                 </span>
             </button>
-
-        </div>
     </div>
 </section>
