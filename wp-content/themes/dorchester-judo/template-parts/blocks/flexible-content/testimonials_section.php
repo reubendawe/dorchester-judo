@@ -51,7 +51,7 @@ $testimonials_repeater = get_sub_field('testimonials_repeater');
 
             <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon-custom" aria-hidden="true">
-                    <i class="bi bi-chevron-left text-dark fs-3"></i>
+                    <i class="bi bi-chevron-left fs-3"></i>
                 </span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">

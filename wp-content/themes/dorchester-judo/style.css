@@ -160,6 +160,7 @@ section {
 }
 
 .testimonials-section {
+  position: relative;
   background-color: #0A050A;
   color: #FFFFFF;
 }
@@ -172,6 +173,19 @@ section {
   height: 48px;
   background-color: #FFFFFF;
   border-radius: 50%;
+}
+.testimonials-section .carousel-control-prev,
+.testimonials-section .carousel-control-next {
+  opacity: 1;
+  z-index: 5;
+}
+.testimonials-section .carousel-item .row {
+  display: flex;
+  align-items: stretch;
+}
+.testimonials-section .bi {
+  color: #FFFFFF;
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {
