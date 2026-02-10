@@ -159,6 +159,14 @@ section {
   height: 350px;
 }
 
+.testimonials-section {
+  background-color: #0A050A;
+  color: #FFFFFF;
+}
+.testimonials-section .testimonial-card {
+  background-color: #AD4320;
+}
+
 @media only screen and (max-width: 600px) {
   .title-pad {
     padding: 0 0 30px;

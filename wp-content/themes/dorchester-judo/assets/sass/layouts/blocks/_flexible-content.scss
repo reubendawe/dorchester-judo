@@ -105,6 +105,16 @@ section {
     height: 350px;
 }
 
+// Testimonials Section
+
+.testimonials-section {
+    background-color: $brand-primary-dark;
+    color: $brand-neutral-100;
+    .testimonial-card {
+        background-color: $brand-tertiary-light;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     
     .title-pad {
