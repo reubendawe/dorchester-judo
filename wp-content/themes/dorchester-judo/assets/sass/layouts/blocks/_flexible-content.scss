@@ -112,6 +112,13 @@ section {
     color: $brand-neutral-100;
     .testimonial-card {
         background-color: $brand-tertiary-light;
+        border: 1px solid $brand-neutral-100;
+    }
+    .avatar {
+        width: 48px;
+        height: 48px;
+        background-color: $brand-neutral-100;
+        border-radius: 50%;
     }
 }
 

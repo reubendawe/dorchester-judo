@@ -30,10 +30,11 @@ $testimonials_repeater = get_sub_field('testimonials_repeater');
                                             <p class="mb-4">"<?php echo wp_kses_post($quote); ?>"</p>
                                         <?php endif; ?>
                                         <div class="user-info">
-                                            <div class="avatar-placeholder mb-2 mx-auto">
+                                            <div class="mb-2 mx-auto">
                                                 <?php if ($image) : ?>
                                                     <img src="<?php echo esc_url($image['url']); ?>"
                                                         alt="<?php echo esc_url($image['alt']); ?>"
+                                                        class="avatar"
                                                         height="40">
                                                 <?php endif; ?>
                                             </div>
@@ -47,6 +48,17 @@ $testimonials_repeater = get_sub_field('testimonials_repeater');
                     </div>
                 <?php endif; ?>
             </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon-custom" aria-hidden="true">
+                    <i class="bi bi-chevron-left text-dark fs-3"></i>
+                </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon-custom" aria-hidden="true">
+                    <i class="bi bi-chevron-right text-dark fs-3"></i>
+                </span>
+            </button>
 
         </div>
     </div>
