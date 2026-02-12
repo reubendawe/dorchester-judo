@@ -3,7 +3,7 @@ $testimonials_repeater = get_sub_field('testimonials_repeater');
 ?>
 
 <section class="testimonials-section">
-    <div class="carousel slide" data-bs-ride="carousel">
+    <div id="testimonialCarousel class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner container">
 
             <div class="carousel-item active">
@@ -51,14 +51,14 @@ $testimonials_repeater = get_sub_field('testimonials_repeater');
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon-custom" aria-hidden="true">
-                    <i class="bi bi-chevron-left fs-3"></i>
-                </span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon-custom" aria-hidden="true">
-                    <i class="bi bi-chevron-right fs-3"></i>
-                </span>
-            </button>
+            <span class="carousel-control-prev-icon-custom" aria-hidden="true">
+                <i class="bi bi-chevron-left fs-3"></i>
+            </span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon-custom" aria-hidden="true">
+                <i class="bi bi-chevron-right fs-3"></i>
+            </span>
+        </button>
     </div>
 </section>
