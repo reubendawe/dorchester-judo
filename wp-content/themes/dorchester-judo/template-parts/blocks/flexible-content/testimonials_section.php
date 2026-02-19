@@ -79,8 +79,12 @@ if ($testimonials) : ?>
                                     $background = $testimonial['background'];
                                 ?>
                                     <div class="col-md-6">
-                                        <div class="card shadow-sm mb-3">
+                                        <div class="testimonial-card card shadow-sm mb-3">
                                             <div class="card-body text-center p-4">
+                                            <?php if ($logo) : ?>
+                                                <img src="<?php echo esc_url($logo['url']); ?>" height="40" class="mb-4">
+                                            <?php endif; ?>
+                                            <p class="mb-4">"<?php echo wp_kses_post($quote); ?>"</p>
                                                 <div class="user-info">
                                                     <div class="mb-2 mx-auto">
                                                         <?php if ($image) : ?>
