@@ -66,6 +66,15 @@ body, p {
   color: #FFFFFF;
 }
 
+.primary-btn {
+  border: 3px solid #AD4320;
+  padding: 10px 30px;
+  background: transparent !important;
+}
+.primary-btn a {
+  text-decoration: none;
+}
+
 section {
   padding: 80px 0;
 }

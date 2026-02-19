@@ -25,12 +25,14 @@ $button_secondary = get_sub_field('button_secondary');
 
                 <div class="d-grid gap-2 d-sm-flex pt-4">
                     <?php if ($button_primary) : ?>
-                        <a
-                            href="<?= esc_url($button_primary['url']); ?>"
-                            target="<?= esc_attr($button_primary['target'] ?: '_self'); ?>"
-                            class="btn btn-primary btn-lg px-4 gap-3">
-                            <?= esc_html($button_primary['title']); ?>
-                        </a>
+                        <button class="primary-btn">
+                            <a
+                                href="<?= esc_url($button_primary['url']); ?>"
+                                target="<?= esc_attr($button_primary['target'] ?: '_self'); ?>"
+                                class="px-4 gap-3">
+                                <?= esc_html($button_primary['title']); ?>
+                            </a>
+                        </button>
                     <?php endif; ?>
                     <?php if ($button_secondary) : ?>
                         <a
