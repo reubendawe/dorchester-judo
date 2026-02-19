@@ -176,24 +176,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Bootstrap
-
-function theme_add_bootstrap() {
-    // Register Bootstrap CSS
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
-    
-    // Register Bootstrap JS (with Popper included)
-    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array(), null, true);
-}
-add_action('wp_enqueue_scripts', 'theme_add_bootstrap');
-
-function mytheme_register_menus() {
-    register_nav_menus( array(
-        'primary' => __( 'Primary Menu', 'mytheme' ),
-    ) );
-}
-add_action( 'after_setup_theme', 'mytheme_register_menus' );
-
 // Google Fonts
 
 function redpanda_brand_fonts() {
@@ -222,9 +204,30 @@ function theme_prefix_setup() {
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
+// Bootstrap
+
+function theme_add_bootstrap() {
+    // Register Bootstrap CSS
+    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+    
+    // Register Bootstrap JS (with Popper included)
+    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'theme_add_bootstrap');
+
+function mytheme_register_menus() {
+    register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'mytheme' ),
+    ) );
+}
+add_action( 'after_setup_theme', 'mytheme_register_menus' );
+
+
 // CDN Bootstrap Icons 
 
 function theme_enqueue_bootstrap_icons() {
     wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_bootstrap_icons' );
+
+

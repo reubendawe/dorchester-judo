@@ -108,7 +108,6 @@ section {
 // Testimonials Section
 
 .testimonials-section {
-    position: relative;
     background-color: $brand-primary-dark;
     color: $brand-neutral-100;
     .testimonial-card {
@@ -129,10 +128,6 @@ section {
     .carousel-item .row {
         display: flex;
         align-items: stretch;
-    }
-    .bi {
-        color: $brand-neutral-100;
-        display: block;
     }
 }
 
